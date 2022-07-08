@@ -15,9 +15,8 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: 16.x
       - run: npm install
-      - run: npm run test:ci
         env:
           CI: true
       - name: Generate environment variables file
